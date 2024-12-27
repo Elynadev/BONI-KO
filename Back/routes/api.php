@@ -42,4 +42,4 @@ Route::middleware('auth:api')->group(function () {
 
 Route::middleware('auth:api')->get('/users', [AuthController::class,  'getAllUsers']);
 
-/*/lkkkd
+

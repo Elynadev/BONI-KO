@@ -29,12 +29,8 @@ class AuthController extends Controller
             'role' => $request->role,
         ]);
 
-        // Générer un token JWT
-        $token = JWTAuth::fromUser($user);
-
         return response()->json([
             'user' => $user,
-            'token' => $token,
         ]);
     }
 
